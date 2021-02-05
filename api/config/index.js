@@ -43,15 +43,13 @@ app.post('/incluirRegistro', async function (req, res) {
   ) {
 
     try{
-
-    
-
+      
       console.log(`Status: init blockchain for id: ${req.body.id}`);
       registroBlockchain = await reschainContract.methods.recuperarRegistro(req.body.id).call();
 
       if (registroBlockchain[0] != "") {
         console.log('Id já utilizado!')
-        return res.status(400).send({ message: 'Id já utilizado!' });
+        return res.send({ message: 'Id já utilizado!' });
       }
 
       var regist = await reschainContract.methods.incluirRegistro(
