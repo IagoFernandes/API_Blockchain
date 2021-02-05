@@ -1,0 +1,136 @@
+{
+    "reschainAddress": "0xe81E3975f345FF426945aCA57fF3Fd74F44C75C1",
+    "mnemonic": "diet talent empty organ mad cricket because approve soldier urban copper run",
+    "endpoint": "https://rinkeby.infura.io/v3/8fcdf4425763486a87c5c413ef7d6df3",
+    "reschainAbi": [
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_codigo",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_receitaId",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_pacienteId",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_medicoId",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_dhc",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_posologiaId",
+					"type": "string"
+				}
+			],
+			"name": "incluirRegistro",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "novoProprietario",
+					"type": "address"
+				}
+			],
+			"name": "mudarProprietario",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"constant": true,
+			"inputs": [],
+			"name": "proprietario",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"constant": true,
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_codigo",
+					"type": "string"
+				}
+			],
+			"name": "recuperarRegistro",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"payable": false,
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}
